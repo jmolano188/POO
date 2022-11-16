@@ -32,7 +32,7 @@ public class AccesoDatosImpl implements  AccesoDatos{
             entrada.close();
         }catch (IOException exception){
             exception.printStackTrace(System.out);
-            throw new LecturaDatosExcepcion("Excepcion al listar peliculas : "+exception.getMessage())
+            throw new LecturaDatosExcepcion("Excepcion al listar peliculas : "+exception.getMessage());
         }
         return peliculas;
     }
@@ -49,7 +49,7 @@ public class AccesoDatosImpl implements  AccesoDatos{
           System.out.println("");
       }catch (IOException exception){
           exception.printStackTrace(System.out);
-          throw new EscrituraDatosExcepcion("Excepcion al escribir en el archivo : "+exception.getMessage())
+          throw new EscrituraDatosExcepcion("Excepcion al escribir en el archivo : "+exception.getMessage());
       }
     }
 
@@ -74,7 +74,7 @@ public class AccesoDatosImpl implements  AccesoDatos{
             entrada.close();
         }catch (IOException exception){
             exception.printStackTrace(System.out);
-            throw new LecturaDatosExcepcion("Error al buscar  contenido en el archivo : "+exception.getMessage())
+            throw new LecturaDatosExcepcion("Error al buscar  contenido en el archivo : "+exception.getMessage());
         }
         return resultado;
     }
@@ -87,7 +87,7 @@ public class AccesoDatosImpl implements  AccesoDatos{
             System.out.println(" se ha creado el archivo");
         }catch (IOException exception){
             exception.printStackTrace(System.out);
-            throw  new EscrituraDatosExcepcion("Excepcion al crear el archivo: "+exception.getMessage())
+            throw  new EscrituraDatosExcepcion("Excepcion al crear el archivo: "+exception.getMessage());
         }
     }
 
