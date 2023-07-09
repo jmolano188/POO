@@ -1,6 +1,7 @@
 package com.softwarepeliculas.servicio;
 
 import com.softwarepeliculas.datos.AccesoDatos;
+import com.softwarepeliculas.datos.AccesoDatosImpl;
 import com.softwarepeliculas.domain.Pelicula;
 import com.softwarepeliculas.excepciones.AccesoDatosExcepcion;
 
@@ -9,8 +10,8 @@ import java.util.List;
 public class ControlPeliculasImpl implements ControlPeliculas{
     private final AccesoDatos datos;
 
-    public ControlPeliculasImpl(AccesoDatos datos) {
-        this.datos = datos;
+    public ControlPeliculasImpl() {
+        this.datos = new AccesoDatosImpl();
     }
 
     @Override

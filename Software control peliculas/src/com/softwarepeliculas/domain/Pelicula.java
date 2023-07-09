@@ -20,6 +20,6 @@ private String nombre;
 
     @Override
     public String toString() {
-        return "pelicula : "+nombre+"\n";
+        return nombre;
     }
 }
